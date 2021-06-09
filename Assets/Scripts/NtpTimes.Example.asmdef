@@ -1,0 +1,17 @@
+{
+    "name": "NtpTimes.Example",
+    "rootNamespace": "HassakuLab.NtpTimes.Example",
+    "references": [
+        "GUID:f51ebe6a0ceec4240a699833d6309b23",
+        "GUID:a61ff3331978860439d5208ee5c33df9"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
