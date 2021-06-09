@@ -5,7 +5,7 @@ using UnityEngine;
 // ReSharper disable UnusedAutoPropertyAccessor.Global
 // ReSharper disable UnusedMember.Global
 
-namespace HassakuLab.NtpTimes
+namespace HassakuLab.NtpClients
 {
     /// <summary>
     /// Component provide real now time

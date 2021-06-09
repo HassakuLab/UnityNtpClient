@@ -3,7 +3,7 @@
 // ReSharper disable UnusedMember.Local
 // ReSharper disable BuiltInTypeReferenceStyle
 
-namespace HassakuLab.NtpTimes
+namespace HassakuLab.NtpClients
 {
     /// <summary>
     /// Packet for NTP

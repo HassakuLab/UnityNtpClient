@@ -3,7 +3,7 @@ using System.Net;
 using System.Net.Sockets;
 using System.Threading.Tasks;
 
-namespace HassakuLab.NtpTimes
+namespace HassakuLab.NtpClients
 {
     /// <summary>
     /// request sync time

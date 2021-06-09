@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 
 
-namespace HassakuLab.NtpTimes.Example
+namespace HassakuLab.NtpClients.Example
 {
     public class NtpTimeExample : MonoBehaviour
     {
