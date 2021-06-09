@@ -1,6 +1,9 @@
 ﻿using System;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
+// ReSharper disable MemberCanBePrivate.Global
+// ReSharper disable UnusedAutoPropertyAccessor.Global
+// ReSharper disable UnusedMember.Global
 
 namespace HassakuLab.NtpTimes
 {
@@ -19,11 +22,6 @@ namespace HassakuLab.NtpTimes
         /// If timeoutSec > 0, set timeout [sec]
         /// </summary>
         [SerializeField] private int timeoutSec = 5;
-        
-        /// <summary>
-        /// If true, do Sync() in Awake().
-        /// </summary>
-        [SerializeField] private bool syncInAwake;
 
         /// <summary>
         /// Get timer is synced or not.
@@ -34,7 +32,7 @@ namespace HassakuLab.NtpTimes
         /// <summary>
         /// Get time last synchronized
         /// </summary>
-        public DateTime LastSyncTime { get; private set; }
+        public DateTimeOffset LastSyncTime { get; private set; }
 
         private float syncTimeSinceStartup;
 
@@ -53,14 +51,6 @@ namespace HassakuLab.NtpTimes
         public int TimeOutSec
         {
             set => timeoutSec = value;
-        }
-
-        private void Awake()
-        {
-            if (syncInAwake)
-            {
-                StartSync();
-            }
         }
 
         /// <summary>
@@ -91,6 +81,6 @@ namespace HassakuLab.NtpTimes
         /// Get now time
         /// </summary>
         /// <returns>now time</returns>
-        public DateTime Now => LastSyncTime + TimeSpan.FromSeconds(Time.realtimeSinceStartup - syncTimeSinceStartup);
+        public DateTimeOffset Now => LastSyncTime + TimeSpan.FromSeconds(Time.realtimeSinceStartup - syncTimeSinceStartup);
     }
 }

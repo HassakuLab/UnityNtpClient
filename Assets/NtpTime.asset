@@ -12,6 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bb90f47aa88444458b40dd7547f29fd, type: 3}
   m_Name: NtpTime
   m_EditorClassIdentifier: 
-  ntpServerAddress: time.google.com
+  ntpServerAddress: 
   timeoutSec: 5
-  syncInAwake: 0
