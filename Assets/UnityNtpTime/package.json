@@ -1,9 +1,15 @@
 {
   "name": "com.hassakulab.unity-ntp-client",
   "displayName": "UnityNtpClient",
+  "author":{
+    "name": "HassakuLab",
+    "url": "https://hassakulab.com"
+  },
   "version": "0.0.0",
   "unity": "2020.2",
-  "description": "provide real time via ntp",
+  "description": "Provide date and time via NTP.",
+  "keywords": ["ntp"],
+  "license": "MIT",
   
   "dependencies": {
     "com.cysharp.unitask": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask"
